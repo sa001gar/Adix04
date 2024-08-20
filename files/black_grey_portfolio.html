@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Sagar Kundu</title>
+    <!-- Tailwind CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- AOS for Animations -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <!-- Glider.js for Carousel -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.7/glider.min.css">
+    <style>
+        /* Custom styles for mobile menu */
+        .mobile-menu {
+            display: none;
+        }
+        .mobile-menu.active {
+            display: block;
+        }
+        /* Custom color scheme */
+        .bg-custom-black { background-color: #1a1a1a; }
+        .bg-custom-gray { background-color: #333; }
+        .bg-custom-white { background-color: #fff; }
+        .text-custom-gray { color: #ccc; }
+        .text-custom-white { color: #fff; }
+    </style>
+</head>
+<body class="bg-custom-black text-custom-white">
+    <!-- Header -->
+    <header class="sticky top-0 bg-custom-black shadow-md z-50">
+        <div class="container mx-auto flex justify-between items-center py-4 px-6">
+            <a href="#" class="flex items-center text-xl font-bold text-custom-white">
+                <i class="fas fa-laptop-code mr-2"></i> Sagar Kundu
+            </a>
+            <nav class="hidden md:flex space-x-4">
+                <a href="#about" class="hover:text-custom-gray">About</a>
+                <a href="#expertise" class="hover:text-custom-gray">Expertise</a>
+                <a href="#portfolio" class="hover:text-custom-gray">Portfolio</a>
+                <a href="#contact" class="hover:text-custom-gray">Contact</a>
+            </nav>
+            <button class="md:hidden text-custom-white mobile-menu-button">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        <div class="mobile-menu bg-custom-black text-custom-white">
+            <a href="#about" class="block py-2 px-6 hover:bg-custom-gray">About</a>
+            <a href="#expertise" class="block py-2 px-6 hover:bg-custom-gray">Expertise</a>
+            <a href="#portfolio" class="block py-2 px-6 hover:bg-custom-gray">Portfolio</a>
+            <a href="#contact" class="block py-2 px-6 hover:bg-custom-gray">Contact</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="flex items-center justify-center h-60 bg-custom-gray text-custom-white text-center">
+        <div data-aos="fade-up" data-aos-duration="1500">
+            <h1 class="text-3xl md:text-4xl font-bold mb-4">Welcome to my Portfolio</h1>
+            <p class="text-lg md:text-xl mb-8">I'm a passionate bug hunter, penetration tester, and developer.</p>
+            <div class="space-x-4">
+                <a href="#portfolio" class="bg-custom-white text-custom-gray px-6 py-2 rounded-full hover:bg-gray-200 transition duration-300">View Portfolio</a>
+                <a href="#contact" class="border border-custom-white px-6 py-2 rounded-full hover:bg-custom-white hover:text-custom-gray transition duration-300">Contact Me</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="container mx-auto py-16 px-6">
+        <div class="grid md:grid-cols-2 gap-8">
+            <div data-aos="fade-right" data-aos-duration="1500">
+                <h2 class="text-3xl font-bold mb-4 text-custom-white">About Me</h2>
+                <p class="mb-4">I'm a passionate bug hunter, penetration tester, and developer with a strong focus on cybersecurity and web development. I have a deep understanding of computer systems, networks, and security principles, and I'm always eager to learn and improve my skills.</p>
+                <p>In my free time, I enjoy participating in bug bounty programs and hacking challenges, where I can put my skills to the test and help organizations improve their security posture. I also love to create innovative web applications and share my knowledge with the community.</p>
+            </div>
+            <div class="space-y-4">
+                <h2 class="text-3xl font-bold text-custom-white">My Skills</h2>
+                <ul class="grid grid-cols-2 gap-4">
+                    <li class="rounded-md bg-custom-gray p-4 text-center">
+                        <svg class="mx-auto h-8 w-8 text-custom-gray" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                            <path d="m8 2 1.88 1.88" />
+                            <path d="M14.12 3.88 16 2" />
+                            <path d="M9 7.13v-1a3.003 3.003 0 1 1 6 0v1" />
+                            <path d="M12 20c-3.3 0-6-2.7-6-6v-3a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v3c0 3.3-2.7 6-6 6" />
+                            <path d="M12 20v-9" />
+                            <path d="M6.53 9C4.6 8.8 3 7.1 3 5" />
+                            <path d="M6 13H2" />
+                            <path d="M3 21c0-2.1 1.7-3.9 3.8-4" />
+                            <path d="M20.97 5c0 2.1-1.6 3.8-3.5 4" />
+                            <path d="M22 13h-4" />
+                            <path d="M17.2 17c2.1.1 3.8 1.9 3.8 4" />
+                        </svg>
+                        <h3 class="mt-2 text-lg font-semibold text-custom-white">Bug Hunting</h3>
+                    </li>
+                    <li class="rounded-md bg-custom-gray p-4 text-center">
+                        <svg class="mx-auto h-8 w-8 text-custom-gray" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                            <path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z" />
+                        </svg>
+                        <h3 class="mt-2 text-lg font-semibold text-custom-white">Penetration Testing</h3>
+                    </li>
+                    <li class="rounded-md bg-custom-gray p-4 text-center">
+                        <svg class="mx-auto h-8 w-8 text-custom-gray" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                            <polyline points="16 18 22 12 16 6" />
+                            <polyline points="8 6 2 12 8 18" />
+                        </svg>
+                        <h3 class="mt-2 text-lg font-semibold text-custom-white">Development</h3>
+                    </li>
+                    <li class="rounded-md bg-custom-gray p-4 text-center">
+                        <svg class="mx-auto h-8 w-8 text-custom-gray" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                            <rect width="18" height="11" x="3" y="11" rx="2" ry="2" />
+                            <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+                        </svg>
+                        <h3 class="mt-2 text-lg font-semibold text-custom-white">Cybersecurity</h3>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expertise Section -->
+    <section id="expertise" class="bg-custom-gray py-16 px-6">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold mb-8 text-custom-white text-center" data-aos="fade-up" data-aos-duration="1500">My Expertise</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-custom-black p-6 shadow-md rounded-md text-center" data-aos="fade-up" data-aos-duration="1500">
+                    <i class="fas fa-bug text-custom-gray text-3xl mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2 text-custom-white">Bug Hunting</h3>
+                    <p class="text-custom-gray">Extensive experience in identifying and reporting security vulnerabilities in web applications, mobile apps, and other software systems.</p>
+                </div>
+                <div class="bg-custom-black p-6 shadow-md rounded-md text-center" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1500">
+                    <i class="fas fa-lock text-custom-gray text-3xl mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2 text-custom-white">Penetration Testing</h3>
+                    <p class="text-custom-gray">Proficient in conducting comprehensive penetration tests to assess the security posture of organizations.</p>
+                </div>
+                <div class="bg-custom-black p-6 shadow-md rounded-md text-center" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1500">
+                    <i class="fas fa-code text-custom-gray text-3xl mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2 text-custom-white">Development</h3>
+                    <p class="text-custom-gray">Skilled developer with experience in building web applications, mobile apps, and other software systems.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="container mx-auto py-16 px-6">
+        <h2 class="text-3xl font-bold mb-8 text-center text-custom-white" data-aos="fade-up" data-aos-duration="1500">My Portfolio</h2>
+        <div class="glider-contain">
+            <div class="glider">
+                <div class="bg-custom-black p-6 shadow-md rounded-md mr-4" data-aos="fade-up" data-aos-duration="1500">
+                    <h3 class="text-xl font-semibold mb-2 text-custom-white">Bug Bounty Platform</h3>
+                    <p class="text-custom-gray mb-4">A web application that allows security researchers to report and track security vulnerabilities.</p>
+                    <a href="#" class="text-custom-gray hover:underline">View Project</a>
+                </div>
+                <div class="bg-custom-black p-6 shadow-md rounded-md mr-4" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1500">
+                    <h3 class="text-xl font-semibold mb-2 text-custom-white">Penetration Testing Tool</h3>
+                    <p class="text-custom-gray mb-4">A command-line tool that automates the process of penetration testing.</p>
+                    <a href="#" class="text-custom-gray hover:underline">View Project</a>
+                </div>
+                <div class="bg-custom-black p-6 shadow-md rounded-md mr-4" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1500">
+                    <h3 class="text-xl font-semibold mb-2 text-custom-white">Cybersecurity Blog</h3>
+                    <p class="text-custom-gray mb-4">A blog that covers various topics related to cybersecurity, including bug hunting, penetration testing, and secure coding practices.</p>
+                    <a href="#" class="text-custom-gray hover:underline">View Project</a>
+                </div>
+                <div class="bg-custom-black p-6 shadow-md rounded-md mr-4" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1500">
+                    <h3 class="text-xl font-semibold mb-2 text-custom-white">Web Application</h3>
+                    <p class="text-custom-gray mb-4">A dynamic web application with features like user authentication, data visualization, and more.</p>
+                    <a href="#" class="text-custom-gray hover:underline">View Project</a>
+                </div>
+            </div>
+            <div class="glider-dots"></div>
+            <button aria-label="Previous" class="glider-prev text-custom-gray">«</button>
+            <button aria-label="Next" class="glider-next text-custom-gray">»</button>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-custom-black py-16 px-6">
+        <div class="container mx-auto">
+            <div class="grid md:grid-cols-2 gap-8">
+                <div data-aos="fade-right" data-aos-duration="1500">
+                    <h2 class="text-3xl font-bold mb-4 text-custom-white">Get in Touch</h2>
+                    <p class="text-custom-gray mb-8">Whether you're interested in working together or just want to say hello, I'd love to hear from you. Feel free to reach out using the form below.</p>
+                    <ul class="space-y-4">
+                        <li class="flex items-center text-custom-gray">
+                            <i class="fas fa-envelope text-custom-gray text-2xl mr-4"></i>
+                            <span>kundusagar233@gmail.com</span>
+                        </li>
+                        <li class="flex items-center text-custom-gray">
+                            <i class="fas fa-phone text-custom-gray text-2xl mr-4"></i>
+                            <span>0343 299610</span>
+                        </li>
+                        <li class="flex items-center text-custom-gray">
+                            <i class="fas fa-map-marker-alt text-custom-gray text-2xl mr-4"></i>
+                            <span>123 Street, City, Country</span>
+                        </li>
+                    </ul>
+                </div>
+                <form class="bg-custom-gray p-6 shadow-md rounded-md" data-aos="fade-left" data-aos-duration="1500">
+                    <div class="mb-4">
+                        <label class="block text-custom-white mb-2" for="name">Name</label>
+                        <input class="w-full px-4 py-2 border rounded-md focus:ring-2 focus:ring-blue-600" type="text" id="name" placeholder="Your Name">
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-custom-white mb-2" for="email">Email</label>
+                        <input class="w-full px-4 py-2 border rounded-md focus:ring-2 focus:ring-blue-600" type="email" id="email" placeholder="Your Email">
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-custom-white mb-2" for="message">Message</label>
+                        <textarea class="w-full px-4 py-2 border rounded-md focus:ring-2 focus:ring-blue-600" id="message" rows="4" placeholder="Your Message"></textarea>
+                    </div>
+                    <button class="w-full bg-custom-gray text-custom-white py-2 rounded-md hover:bg-gray-600 transition duration-300" type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-custom-gray text-custom-white py-6">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Sagar Kundu. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.7/glider.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init();
+
+        // Initialize Glider.js
+        new Glider(document.querySelector('.glider'), {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            draggable: true,
+            arrows: {
+                prev: '.glider-prev',
+                next: '.glider-next'
+            },
+            responsive: [
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+            ]
+        });
+
+        // Mobile Menu Toggle
+        document.querySelector('.mobile-menu-button').addEventListener('click', function() {
+            document.querySelector('.mobile-menu').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

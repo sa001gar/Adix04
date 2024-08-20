@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>John Doe's Portfolio</title>
+  <!-- Tailwind CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    :root {
+      --background: 0 0% 100%;
+      --foreground: 240 10% 3.9%;
+      --card: 0 0% 100%;
+      --card-foreground: 240 10% 3.9%;
+      --popover: 0 0% 100%;
+      --popover-foreground: 240 10% 3.9%;
+      --primary: 346.8 77.2% 49.8%;
+      --primary-foreground: 355.7 100% 99%;
+      --secondary: 240 4.8% 95.9%;
+      --secondary-foreground: 240 5.9% 10%;
+      --muted: 240 4.8% 95.9%;
+      --muted-foreground: 240 3.8% 45%;
+      --accent: 240 4.8% 95.9%;
+      --accent-foreground: 240 5.9% 10%;
+      --destructive: 0 72% 51%;
+      --destructive-foreground: 0 0% 98%;
+      --border: 240 5.9% 90%;
+      --input: 240 5.9% 90%;
+      --ring: 346.8 77.2% 49.8%;
+      --chart-1: 347 77% 50%;
+      --chart-2: 349 77% 62%;
+      --chart-3: 350 80% 72%;
+      --chart-4: 351 83% 82%;
+      --chart-5: 352 83% 91%;
+      --radius: 0.5rem;
+    }
+    img[src="/placeholder.svg"], img[src="/placeholder-user.jpg"] {
+      filter: sepia(.3) hue-rotate(-60deg) saturate(.5) opacity(0.8);
+    }
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Inter', sans-serif;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-background text-foreground">
+  <div class="flex min-h-screen flex-col">
+    <header class="sticky top-0 z-50 w-full bg-background/90 backdrop-blur-sm">
+      <div class="container mx-auto flex h-16 max-w-7xl items-center justify-between px-4 md:px-6">
+        <a class="flex items-center gap-2" href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6">
+            <path d="M20 16V7a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v9m16 0H4m16 0 1.28 2.55a1 1 0 0 1-.9 1.45H3.62a1 1 0 0 1-.9-1.45L4 16"></path>
+          </svg>
+          <span class="text-lg font-bold">John Doe</span>
+        </a>
+        <nav class="hidden space-x-4 md:flex">
+          <a class="rounded-md px-3 py-2 text-sm font-medium hover:bg-muted hover:text-foreground" href="#">About</a>
+          <a class="rounded-md px-3 py-2 text-sm font-medium hover:bg-muted hover:text-foreground" href="#">Expertise</a>
+          <a class="rounded-md px-3 py-2 text-sm font-medium hover:bg-muted hover:text-foreground" href="#">Portfolio</a>
+          <a class="rounded-md px-3 py-2 text-sm font-medium hover:bg-muted hover:text-foreground" href="#">Contact</a>
+        </nav>
+        <button class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 w-10 md:hidden">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6">
+            <line x1="4" x2="20" y1="12" y2="12"></line>
+            <line x1="4" x2="20" y1="6" y2="6"></line>
+            <line x1="4" x2="20" y1="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </header>
+    <main class="flex-1">
+      <section id="hero" class="flex flex-col items-center justify-center gap-6 bg-gradient-to-br from-primary to-primary-foreground py-12 text-center text-primary-foreground md:py-24">
+        <div class="space-y-4">
+          <h1 class="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">Welcome to my Portfolio</h1>
+          <p class="max-w-[600px] text-lg md:text-xl">I'm a passionate developer with a strong focus on web development and software engineering.</p>
+        </div>
+        <div class="flex flex-col gap-2 sm:flex-row">
+          <a class="inline-flex items-center justify-center rounded-md bg-primary-foreground px-6 py-2 text-sm font-medium text-primary shadow-sm transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" href="#">View Portfolio</a>
+          <a class="inline-flex items-center justify-center rounded-md border border-primary-foreground bg-primary px-6 py-2 text-sm font-medium text-primary-foreground shadow-sm transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" href="#">Contact Me</a>
+        </div>
+      </section>
+      <section id="about" class="container mx-auto my-12 max-w-7xl px-4 md:my-24 md:px-6">
+        <div class="grid gap-8 md:grid-cols-2">
+          <div class="space-y-4">
+            <h2 class="text-3xl font-bold">About Me</h2>
+            <div class="flex items-center gap-4">
+              <img src="/placeholder.svg" alt="John Doe" class="rounded-full" style="aspect-ratio: 150 / 150; object-fit: cover;" width="150" height="150" />
+              <p>I'm a passionate developer with a strong focus on web development and software engineering. I have a deep understanding of computer systems, programming languages, and software design principles, and I'm always eager to learn and improve my skills.</p>
+            </div>
+            <p>In my free time, I enjoy working on personal projects and contributing to open-source software. I also love to share my knowledge with the community by writing blog posts and participating in developer forums.</p>
+          </div>
+          <div class="space-y-4">
+            <h2 class="text-3xl font-bold">My Skills</h2>
+            <ul class="grid grid-cols-2 gap-4">
+              <li class="rounded-md bg-muted p-4 text-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mx-auto h-8 w-8">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+                <h3 class="mt-2 text-lg font-semibold">Web Development</h3>
+              </li>
+              <li class="rounded-md bg-muted p-4 text-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mx-auto h-8 w-8">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+                <h3 class="mt-2 text-lg font-semibold">Software Engineering</h3>
+              </li>
+              <li class="rounded-md bg-muted p-4 text-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mx-auto h-8 w-8">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+                <h3 class="mt-2 text-lg font-semibold">Problem Solving</h3>
+              </li>
+              <li class="rounded-md bg-muted p-4 text-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mx-auto h-8 w-8">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+                <h3 class="mt-2 text-lg font-semibold">Open Source Contribution</h3>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section id="portfolio" class="container mx-auto my-12 max-w-7xl px-4 md:my-24 md:px-6">
+        <h2 class="text-3xl font-bold">Portfolio</h2>
+        <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+          <div class="rounded-lg bg-card p-6 shadow-md">
+            <h3 class="text-xl font-semibold">Project 1</h3>
+            <p>A brief description of this project.</p>
+            <span class="text-sm text-muted">#JavaScript #WebDev</span>
+          </div>
+          <div class="rounded-lg bg-card p-6 shadow-md">
+            <h3 class="text-xl font-semibold">Project 2</h3>
+            <p>A brief description of this project.</p>
+            <span class="text-sm text-muted">#Python #DataScience</span>
+          </div>
+          <div class="rounded-lg bg-card p-6 shadow-md">
+            <h3 class="text-xl font-semibold">Project 3</h3>
+            <p>A brief description of this project.</p>
+            <span class="text-sm text-muted">#Django #Backend</span>
+          </div>
+          <!-- Add more project cards as needed -->
+        </div>
+      </section>
+      <section id="contact" class="container mx-auto my-12 max-w-7xl px-4 md:my-24 md:px-6">
+        <h2 class="text-3xl font-bold">Contact</h2>
+        <form class="space-y-4">
+          <div>
+            <label for="name" class="block text-sm font-medium">Name</label>
+            <input type="text" id="name" name="name" required class="w-full rounded-md border border-muted p-2">
+          </div>
+          <div>
+            <label for="email" class="block text-sm font-medium">Email</label>
+            <input type="email" id="email" name="email" required class="w-full rounded-md border border-muted p-2">
+          </div>
+          <div>
+            <label for="message" class="block text-sm font-medium">Message</label>
+            <textarea id="message" name="message" required class="w-full rounded-md border border-muted p-2"></textarea>
+          </div>
+          <button type="submit" class="inline-flex items-center justify-center rounded-md bg-primary px-6 py-2 text-sm font-medium text-primary-foreground shadow-sm transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2">Send Message</button>
+        </form>
+      </section>
+    </main>
+    <footer class="bg-muted py-4 text-center text-sm">
+      <p>&copy; 2024 John Doe. All rights reserved.</p>
+    </footer>
+  </div>
+</body>
+</html>

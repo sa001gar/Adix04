@@ -1,0 +1,45 @@
+/* Light Mode Styles */
+body {
+    background-color: #f7fafc;
+    color: #2d3748;
+}
+
+header {
+    background-color: #ffffff;
+}
+
+header a {
+    color: #2d3748;
+}
+
+header a:hover {
+    color: #4a5568;
+}
+
+footer {
+    background-color: #f7fafc;
+}
+
+.bg-gray-800 {
+    background-color: #e2e8f0;
+}
+
+.bg-gray-900 {
+    background-color: #edf2f7;
+}
+
+.text-gray-300 {
+    color: #2d3748;
+}
+
+.text-gray-400 {
+    color: #4a5568;
+}
+
+.text-gray-700 {
+    color: #2d3748;
+}
+
+.border-gray-700 {
+    border-color: #edf2f7;
+}

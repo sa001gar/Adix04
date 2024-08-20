@@ -1,0 +1,45 @@
+/* Dark Mode Styles */
+body {
+    background-color: #1a202c;
+    color: #e2e8f0;
+}
+
+header {
+    background-color: #2d3748;
+}
+
+header a {
+    color: #edf2f7;
+}
+
+header a:hover {
+    color: #cbd5e0;
+}
+
+footer {
+    background-color: #2d3748;
+}
+
+.bg-gray-800 {
+    background-color: #2d3748;
+}
+
+.bg-gray-900 {
+    background-color: #1a202c;
+}
+
+.text-gray-300 {
+    color: #e2e8f0;
+}
+
+.text-gray-400 {
+    color: #cbd5e0;
+}
+
+.text-gray-700 {
+    color: #edf2f7;
+}
+
+.border-gray-700 {
+    border-color: #4a5568;
+}
